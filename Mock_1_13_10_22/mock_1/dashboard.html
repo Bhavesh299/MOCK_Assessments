@@ -8,11 +8,50 @@
     <link rel="stylesheet" href="./style/dashboard.css">
 </head>
 <body>
+
     <div id="navbar"> 
         <a class="h2" href="register.html"> <h2>Resister</h2></a> 
         <a class="h2" href="dashboard.html"> <h2 > Dashboard</h2></a> 
         <a class="h2" href="vaccinated.html"> <h2 > Vaccinated</h2></a> 
     </div>
+    <div>
+
+           <select id= "filter" onchange="filter()">
+                <option value ="">Filter by category</option>
+                <option value="Covishield">Covishield</option>
+                <option value="Covaxin">Covaxin</option>
+                <option value ="Sputnik">Sputnik</option> 
+            </select> 
+            <select id="sort" onchange="sortAge()">
+                <option value="">Sort by Age</option>
+                <option value="Low">Low to High</option>
+                <option value="High">High to Low</option>
+            </select>
+
+            <div id="container">
+                <div id="display">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Designation</th>
+                                <th>Priority</th>
+                                <th>Vaccine Type</th>
+                                <th>Registration Delete </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+    </div>
+    
 </body>
-<script src="./script/dashboard.js"></script>
 </html>
+<script src="./script/dashboard.js">
+   
+
+</script>
