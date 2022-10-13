@@ -58,7 +58,7 @@ console.log(register)
                 td_6.textContent=el.Vaccine;
             let td_7=document.createElement("td") ;
                 td_7.textContent="Delete" ;
-            tr.append(td_1,td_2,td_3,td_4,td_5,td_6,td_7,td_8) ;
+            tr.append(td_1,td_2,td_3,td_4,td_5,td_6,td_7) ;
 
             document.querySelector("tbody").append(tr) ;
         })
