@@ -16,3 +16,22 @@ body{
     color: white;
     text-decoration:none;
 }
+#name{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+  text-align: center;
+}
+#main_div{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+img{
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+}

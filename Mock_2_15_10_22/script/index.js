@@ -28,12 +28,12 @@ function display_Data(data) {
     container.append(div) ;
   })
 }
-  var pubby_Array = [];
+  var puppy_Array = [];
   const Add = (data) => {
     var temp = data ;
     console.log(temp) ;
-    pubby_Array.push(temp) ;
-    localStorage.setItem("pubby_array", JSON.stringify(pubby_Array)) ;
+    puppy_Array.push(temp) ;
+    localStorage.setItem("puppy_array", JSON.stringify(puppy_Array)) ;
     window.location.href= "Puppy.html" ;
 }
 
