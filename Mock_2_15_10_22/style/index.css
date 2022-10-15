@@ -16,3 +16,20 @@ body{
     color: white;
     text-decoration:none;
 }
+.div1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    margin-bottom: 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
