@@ -16,3 +16,41 @@ body{
     color: white;
     text-decoration:none;
 }
+#container{
+    width:100%;
+    height:auto;
+   
+  }
+#Search{
+    width:400px;
+    height:auto;
+  }
+  #Search>*{
+      margin-top:30px;
+      margin-bottom: 100px;
+  }
+  #searchInput{
+      width:50%;
+      height: 20px;
+      margin-left: 30% ;
+  }
+  #home{
+      color: black;
+      width:100px;
+      height:98%;
+  }
+ #font{
+     color: black;
+     margin-top:20px;
+ }
+#Main_Div{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  font-weight:bold;
+  grid-gap:10px;
+}
+
+img{
+  width: 60%;
+  height: 80%;
+}
