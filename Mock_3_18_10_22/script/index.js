@@ -13,6 +13,7 @@ function display_Data(data) {
 
     console.log(data) ;
   var container =  document.getElementById("container") ;
+  container.innerHTML = "" ;
   data?.map((el, i) =>{
 
         // console.log(el) ;
@@ -119,7 +120,24 @@ function display_Data(data) {
    div2.append(imagediv,players,positions,button,   h1,team,abbr,conference,Division,city) ;
    div.append(div2);
    container.append(div) ;
-  
 
-  
 }
+
+const Search = async () => {
+    try {
+      var Input_value = document.getElementById("search_input").value ;
+  
+      var res = await fetch(`https://www.balldontlie.io/api/v1/players`);
+      var resonse = await res.json();
+  
+      Input_value_search= resonse?.data?.filter((e) => {
+        if( e.first_name=Input_value){
+          return e ;
+        }
+      });
+      console.log("Input_value_search",Input_value_search)
+      display_Data(Input_value_search) ;
+    } catch (err) {
+      console.log(err);
+    }
+  };
